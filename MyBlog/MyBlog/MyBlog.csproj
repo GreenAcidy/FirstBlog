@@ -1,13 +1,21 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Areas\Admin\Controllers\" />
+    <Compile Remove="Views\ViewComponents\**" />
+    <Content Remove="Views\ViewComponents\**" />
+    <EmbeddedResource Remove="Views\ViewComponents\**" />
+    <None Remove="Views\ViewComponents\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Areas\Admin\" />
+    <Folder Include="Domain\" />
+    <Folder Include="Models\ViewComponents\" />
     <Folder Include="Service\" />
-    <Folder Include="Views\ViewComponents\" />
     <Folder Include="wwwroot\images\" />
     <Folder Include="wwwroot\sass\" />
   </ItemGroup>
