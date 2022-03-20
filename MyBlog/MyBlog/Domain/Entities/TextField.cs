@@ -7,7 +7,7 @@ namespace MyBlog.Domain.Entities
         [Required]
         public string CodeWord { get; set; }
 
-        [Display(Name = "Name of page (title")]
+        [Display(Name = "Name of page (title)")]
         public override string Title { get; set; } = "Information page";
 
         [Display(Name ="Content of page")]
