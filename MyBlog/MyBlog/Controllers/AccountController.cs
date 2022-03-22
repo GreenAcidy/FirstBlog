@@ -39,7 +39,7 @@ namespace MyBlog.Controllers
                         return Redirect(returnUrl ?? "/");
                     }
                 }
-                ModelState.AddModelError(nameof(LoginViewModel.UserName), "Неверный логин или пароль");
+                ModelState.AddModelError(nameof(LoginViewModel.UserName), "Incorrect login or passwordh");
             }
             return View(model);
         }
